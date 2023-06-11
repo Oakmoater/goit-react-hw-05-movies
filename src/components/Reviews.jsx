@@ -10,8 +10,7 @@ function Revievs() {
         const getMovieRevievs = async () => {
         try {
             const movieRevievs = await fetchMovieReviews(movieId);
-            setRevievs(movieRevievs);
-            console.log(revievs)
+            setRevievs(movieRevievs.results);
         } catch (error) {
             console.error(error);
         }};
@@ -20,7 +19,13 @@ function Revievs() {
 
     return (
         <div>
-            <p>інформація про огляди</p>
+            <ul>
+                {revievs && revievs.map(reviev => (
+                    <li key={reviev.id}>
+                        author : {reviev.author}
+                    </li>
+                ))}
+            </ul>
         </div>
     )
 }

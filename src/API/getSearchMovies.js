@@ -59,7 +59,7 @@ export const fetchMovieCredits = async (movieId) => {
       `https://api.themoviedb.org/3/movie/${movieId}/credits?language=en-US`,
       options
     );
-    console.log(response.data) // в консоль результат
+    // console.log(response.data.cast) // в консоль результат
     return (response.data);
   } catch (error) {
     console.error(error);
@@ -73,7 +73,7 @@ export const fetchMovieReviews = async (movieId) => {
       `https://api.themoviedb.org/3/movie/${movieId}/reviews?language=en-US&page=1`,
       options
     );
-    console.log(response.data) // в консоль результат
+    // console.log(response.data.results) // в консоль результат
     return (response.data);
   } catch (error) {
     console.error(error);
