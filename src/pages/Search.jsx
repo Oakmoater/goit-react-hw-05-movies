@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { searchMovies } from "API/getSearchMovies";
 import MovieList from "components/MovieList";
-import { SearchBox } from "components/SearchArea";
+// import { SearchBox } from "components/SearchArea";
 
 function Search() {
     const [movies, setMovies] = useState([]);
@@ -34,7 +34,7 @@ function Search() {
     return (
         <main>
             <form onSubmit={handleSubmit}>
-                <input type="text" defaultValue={queryValue} />
+                <input type="text" name="query" defaultValue={queryValue} />
                 <button type="submit">Search</button>
             </form>
             {/* <SearchBox defaultValue={queryValue} onSubmit={handleSubmit} /> */}
