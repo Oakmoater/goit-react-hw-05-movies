@@ -11,6 +11,7 @@ function Revievs() {
         try {
             const movieRevievs = await fetchMovieReviews(movieId);
             setRevievs(movieRevievs);
+            console.log(revievs)
         } catch (error) {
             console.error(error);
         }};
