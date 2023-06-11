@@ -1,12 +1,12 @@
 import { fetchMovieDetails } from "API/getSearchMovies";
 import { useLocation, Link, Outlet , useParams } from "react-router-dom";
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 const Movie = () => {
     const [movie, setMovie] = useState(null);
     const { movieId } = useParams()
     const location = useLocation()
-    const backLinkHref = location.state?.from ?? "/movies";
+    const backLinkHref = useRef(location.state?.from ?? "/movies");
 
     useEffect(() => {
         const getMovieDetails = async () => {
@@ -27,7 +27,7 @@ const Movie = () => {
     return (
         <div>
             <button>
-                <Link to={backLinkHref}>Back</Link>
+                <Link to={backLinkHref.current}>Back</Link>
             </button>
             <h2>{movie.title}</h2>
             <p>{movie.overview}</p>
