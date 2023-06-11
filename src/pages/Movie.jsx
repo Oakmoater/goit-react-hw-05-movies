@@ -13,7 +13,6 @@ const Movie = () => {
         try {
             const movieDetails = await fetchMovieDetails(movieId);
             setMovie(movieDetails);
-            // console.log(location) // lokation log
         } catch (error) {
             console.error(error);
         }};
@@ -31,7 +30,6 @@ const Movie = () => {
             </button>
             <h2>{movie.title}</h2>
             <p>{movie.overview}</p>
-            {/* Додайте інші деталі фільму, які ви хочете відобразити */}
             <ul>
                 <li>
                     <Link to={'cast'}>інформація про акторський склад</Link>
