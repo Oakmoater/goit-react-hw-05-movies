@@ -10,19 +10,19 @@ function Search() {
     const queryValue = searchParams.get("query") ?? "";
 
     useEffect(() => {
-        if (queryValue === "") return;
+    if (queryValue === "") return;
 
-        async function fetchMovies() {
+    async function fetchMovies() {
         try {
-            const searchResults = await searchMovies(queryValue);
-            setMovies(searchResults.results);
-            } catch (error) {
-                console.error(error);
-            }
+        const searchResults = await searchMovies(queryValue);
+        setMovies(searchResults.results);
+        } catch (error) {
+        console.error(error);
         }
+    }
 
-        fetchMovies();
-    }, [searchParams]);
+    fetchMovies();
+    }, [searchParams, queryValue]);
 
     const handleSubmit = (e) => {
         e.preventDefault();
