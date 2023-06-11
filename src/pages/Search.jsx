@@ -33,7 +33,11 @@ function Search() {
 
     return (
         <main>
-            <SearchBox defaultValue={queryValue} onSubmit={handleSubmit} />
+            <form onSubmit={handleSubmit}>
+                <input type="text" defaultValue={queryValue} />
+                <button type="submit">Search</button>
+            </form>
+            {/* <SearchBox defaultValue={queryValue} onSubmit={handleSubmit} /> */}
             <MovieList movies={movies} />
         </main>
     );

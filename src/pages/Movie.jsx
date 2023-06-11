@@ -13,9 +13,7 @@ const Movie = () => {
         try {
             const movieDetails = await fetchMovieDetails(movieId);
             setMovie(movieDetails);
-
-            console.log(location) // lokation log
-
+            // console.log(location) // lokation log
         } catch (error) {
             console.error(error);
         }};
