@@ -45,7 +45,7 @@ export const fetchMovieDetails = async (movieId) => {
       `https://api.themoviedb.org/3/movie/${movieId}?language=en-US`,
       options
     );
-    // console.log(response.data) // в консоль результат
+    console.log(response.data) // в консоль результат
     return (response.data);
   } catch (error) {
     console.error(error);

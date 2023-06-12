@@ -7,6 +7,8 @@ const Movie = () => {
     const { movieId } = useParams()
     const location = useLocation()
     const backLinkHref = useRef(location.state?.from ?? "/movies");
+    const baseUrl = "https://image.tmdb.org/t/p"
+    const posterSize = "w300"
 
     useEffect(() => {
         const getMovieDetails = async () => {
@@ -28,6 +30,9 @@ const Movie = () => {
             <button>
                 <Link to={backLinkHref.current}>Back</Link>
             </button>
+            <img src=
+              {`${baseUrl}/${posterSize}${movie.poster_path}`}
+              alt="" />
             <h2>{movie.title}</h2>
             <p>{movie.overview}</p>
             <ul>
