@@ -1,22 +1,14 @@
 {
   "files": {
-    "main.js": "/goit-react-hw-05-movies/static/js/main.f0516724.js",
-    "static/js/415.12b822c5.chunk.js": "/goit-react-hw-05-movies/static/js/415.12b822c5.chunk.js",
-    "static/js/565.2a67ae84.chunk.js": "/goit-react-hw-05-movies/static/js/565.2a67ae84.chunk.js",
-    "static/js/499.91768568.chunk.js": "/goit-react-hw-05-movies/static/js/499.91768568.chunk.js",
-    "static/js/597.74df9020.chunk.js": "/goit-react-hw-05-movies/static/js/597.74df9020.chunk.js",
-    "static/js/681.80e1405d.chunk.js": "/goit-react-hw-05-movies/static/js/681.80e1405d.chunk.js",
-    "static/js/279.1e3b90eb.chunk.js": "/goit-react-hw-05-movies/static/js/279.1e3b90eb.chunk.js",
+    "main.js": "/goit-react-hw-05-movies/static/js/main.faec1a50.js",
+    "static/js/597.cc5f15b0.chunk.js": "/goit-react-hw-05-movies/static/js/597.cc5f15b0.chunk.js",
+    "static/js/681.e52c4941.chunk.js": "/goit-react-hw-05-movies/static/js/681.e52c4941.chunk.js",
     "index.html": "/goit-react-hw-05-movies/index.html",
-    "main.f0516724.js.map": "/goit-react-hw-05-movies/static/js/main.f0516724.js.map",
-    "415.12b822c5.chunk.js.map": "/goit-react-hw-05-movies/static/js/415.12b822c5.chunk.js.map",
-    "565.2a67ae84.chunk.js.map": "/goit-react-hw-05-movies/static/js/565.2a67ae84.chunk.js.map",
-    "499.91768568.chunk.js.map": "/goit-react-hw-05-movies/static/js/499.91768568.chunk.js.map",
-    "597.74df9020.chunk.js.map": "/goit-react-hw-05-movies/static/js/597.74df9020.chunk.js.map",
-    "681.80e1405d.chunk.js.map": "/goit-react-hw-05-movies/static/js/681.80e1405d.chunk.js.map",
-    "279.1e3b90eb.chunk.js.map": "/goit-react-hw-05-movies/static/js/279.1e3b90eb.chunk.js.map"
+    "main.faec1a50.js.map": "/goit-react-hw-05-movies/static/js/main.faec1a50.js.map",
+    "597.cc5f15b0.chunk.js.map": "/goit-react-hw-05-movies/static/js/597.cc5f15b0.chunk.js.map",
+    "681.e52c4941.chunk.js.map": "/goit-react-hw-05-movies/static/js/681.e52c4941.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.f0516724.js"
+    "static/js/main.faec1a50.js"
   ]
 }
