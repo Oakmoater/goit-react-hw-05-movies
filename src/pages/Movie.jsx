@@ -37,10 +37,10 @@ const Movie = () => {
             <p>{movie.overview}</p>
             <ul>
                 <li>
-                    <Link to={'cast'}>інформація про акторський склад</Link>
+                    <Link to="cast">інформація про акторський склад</Link>
                 </li>
                 <li>
-                    <Link to={'reviews'}>інформація про огляди</Link>
+                    <Link to="reviews">інформація про огляди</Link>
                 </li>
             </ul>
             <Outlet />
